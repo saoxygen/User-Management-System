@@ -23,7 +23,7 @@ app.use("/img", express.static(path.resolve(__dirname, "/assets/img")));
 app.use("/js/index.js", express.static(path.resolve(__dirname, "/assets/js")));
 
 app.get("/", (req, res) => {
-    res.send("CRUD Application");
+    res.render("index");
 })
 
 app.listen(port, () => {
