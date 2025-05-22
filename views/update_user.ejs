@@ -1,30 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+    <!-- Include header -->
+<%- include('include/_header') %>
+    <!-- /Include header -->
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Management System</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/assets/css/style.css">
-</head>
-
-<body>
-    <!-- Header -->
-    <header id="header">
-        <nav>
-            <div class="container">
-                <div class="text-center">
-                    <a href="/" class="nav-brand text-dark">User Management System</a>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <!-- /Header -->
-
-    <!-- Main Site -->
+        <!-- Main Site -->
     <main id="site-main">
         <div class="container">
             <div class="box-nav d-flex justify-between">
@@ -33,10 +11,11 @@
                 </div>
             </div>
             <div class="form-title text-center">
-                <h2 class="text-dark">New User</h2>
-                <span class="text-light">Use the below form to create a new account</span>
+                <h2 class="text-dark">Update User</h2>
+                <span class="text-light">Use the below form to update an account</span>
             </div>
-            <form method="POST" id="update_user">
+            <!-- add user form -->
+                        <form method="POST" id="update_user">
                 <div class="new_user">
                     <div class="form-group">
                         <label for="name" class="text-light">Name</label>
@@ -75,9 +54,11 @@
                     </div>
                 </div>
             </form>
+            <!-- /add user form -->
         </div>
     </main>
     <!-- /Main Site -->
-</body>
 
-</html>
+    <!-- Include header -->
+    <%- include('include/_footer') %>
+        <!-- /Include header -->
